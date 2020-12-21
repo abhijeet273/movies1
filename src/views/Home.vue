@@ -10,9 +10,9 @@
 </template>
 
 <script>
-import HomeMovies from '../components/HomeMovies.vue'
-import Header from '../components/header.vue'
-import Jumbotron from '../components/jumbotron.vue'
+import HomeMovies from '../components/HomeMovies'
+import Header from '../components/header'
+import Jumbotron from '../components/jumbotron'
 export default {
   name: 'Home',
   components: {

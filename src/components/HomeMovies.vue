@@ -17,49 +17,13 @@
                 <b-container class="bv-example-row">
                   <b-row>
                     <b-col>
-                      <b-card
-                        title="Card Title"
-                        img-src="https://picsum.photos/600/300/?image=25"
-                        img-alt="Image"
-                        img-top
-                        tag="article"
-                        style="max-width: 20rem;"
-                        class="mb-2">
-                          <b-card-text>
-                            Some quick example text to build on the card title and make up the bulk of the card's content.
-                          </b-card-text>
-                          <b-button href="#" variant="primary">Go somewhere</b-button>
-                      </b-card>
+                      <MovieCard/>
                     </b-col>
                     <b-col>
-                      <b-card
-                        title="Card Title"
-                        img-src="https://picsum.photos/600/300/?image=25"
-                        img-alt="Image"
-                        img-top
-                        tag="article"
-                        style="max-width: 20rem;"
-                        class="mb-2">
-                          <b-card-text>
-                            Some quick example text to build on the card title and make up the bulk of the card's content.
-                          </b-card-text>
-                          <b-button href="#" variant="primary">Go somewhere</b-button>
-                      </b-card>
+                      <MovieCard/>
                     </b-col>
                     <b-col>
-                      <b-card
-                        title="Card Title"
-                        img-src="https://picsum.photos/600/300/?image=25"
-                        img-alt="Image"
-                        img-top
-                        tag="article"
-                        style="max-width: 20rem;"
-                        class="mb-2">
-                          <b-card-text>
-                            Some quick example text to build on the card title and make up the bulk of the card's content.
-                          </b-card-text>
-                          <b-button href="#" variant="primary">Go somewhere</b-button>
-                      </b-card>
+                      <MovieCard/>
                     </b-col>
                 </b-row>
               </b-container>
@@ -70,49 +34,13 @@
                 <b-container class="bv-example-row">
                   <b-row>
                     <b-col>
-                      <b-card
-                        title="Card Title"
-                        img-src="https://picsum.photos/600/300/?image=25"
-                        img-alt="Image"
-                        img-top
-                        tag="article"
-                        style="max-width: 20rem;"
-                        class="mb-2">
-                          <b-card-text>
-                            Some quick example text to build on the card title and make up the bulk of the card's content.
-                          </b-card-text>
-                          <b-button href="#" variant="primary">Go somewhere</b-button>
-                      </b-card>
+                      <MovieCard/>
                     </b-col>
                     <b-col>
-                      <b-card
-                        title="Card Title"
-                        img-src="https://picsum.photos/600/300/?image=25"
-                        img-alt="Image"
-                        img-top
-                        tag="article"
-                        style="max-width: 20rem;"
-                        class="mb-2">
-                          <b-card-text>
-                            Some quick example text to build on the card title and make up the bulk of the card's content.
-                          </b-card-text>
-                          <b-button href="#" variant="primary">Go somewhere</b-button>
-                      </b-card>
+                      <MovieCard/>
                     </b-col>
                     <b-col>
-                      <b-card
-                        title="Card Title"
-                        img-src="https://picsum.photos/600/300/?image=25"
-                        img-alt="Image"
-                        img-top
-                        tag="article"
-                        style="max-width: 20rem;"
-                        class="mb-2">
-                          <b-card-text>
-                            Some quick example text to build on the card title and make up the bulk of the card's content.
-                          </b-card-text>
-                          <b-button href="#" variant="primary">Go somewhere</b-button>
-                      </b-card>
+                      <MovieCard/>
                     </b-col>
                 </b-row>
               </b-container>
@@ -125,7 +53,7 @@
     <h3 id="mostPopular">Most Popular</h3>
 
     <template>
-      <div>
+      <div class="mb-0">
         <b-carousel
           id="carousel-1"
           v-model="slide"
@@ -140,49 +68,13 @@
                 <b-container class="bv-example-row">
                   <b-row>
                     <b-col>
-                      <b-card
-                        title="Card Title"
-                        img-src="https://picsum.photos/600/300/?image=25"
-                        img-alt="Image"
-                        img-top
-                        tag="article"
-                        style="max-width: 20rem;"
-                        class="mb-2">
-                          <b-card-text>
-                            Some quick example text to build on the card title and make up the bulk of the card's content.
-                          </b-card-text>
-                          <b-button href="#" variant="primary">Go somewhere</b-button>
-                      </b-card>
+                      <MovieCard/>
                     </b-col>
                     <b-col>
-                      <b-card
-                        title="Card Title"
-                        img-src="https://picsum.photos/600/300/?image=25"
-                        img-alt="Image"
-                        img-top
-                        tag="article"
-                        style="max-width: 20rem;"
-                        class="mb-2">
-                          <b-card-text>
-                            Some quick example text to build on the card title and make up the bulk of the card's content.
-                          </b-card-text>
-                          <b-button href="#" variant="primary">Go somewhere</b-button>
-                      </b-card>
+                      <MovieCard/>
                     </b-col>
                     <b-col>
-                      <b-card
-                        title="Card Title"
-                        img-src="https://picsum.photos/600/300/?image=25"
-                        img-alt="Image"
-                        img-top
-                        tag="article"
-                        style="max-width: 20rem;"
-                        class="mb-2">
-                          <b-card-text>
-                            Some quick example text to build on the card title and make up the bulk of the card's content.
-                          </b-card-text>
-                          <b-button href="#" variant="primary">Go somewhere</b-button>
-                      </b-card>
+                      <MovieCard/>
                     </b-col>
                 </b-row>
               </b-container>
@@ -193,49 +85,13 @@
                 <b-container class="bv-example-row">
                   <b-row>
                     <b-col>
-                      <b-card
-                        title="Card Title"
-                        img-src="https://picsum.photos/600/300/?image=25"
-                        img-alt="Image"
-                        img-top
-                        tag="article"
-                        style="max-width: 20rem;"
-                        class="mb-2">
-                          <b-card-text>
-                            Some quick example text to build on the card title and make up the bulk of the card's content.
-                          </b-card-text>
-                          <b-button href="#" variant="primary">Go somewhere</b-button>
-                      </b-card>
+                      <MovieCard/>
                     </b-col>
                     <b-col>
-                      <b-card
-                        title="Card Title"
-                        img-src="https://picsum.photos/600/300/?image=25"
-                        img-alt="Image"
-                        img-top
-                        tag="article"
-                        style="max-width: 20rem;"
-                        class="mb-2">
-                          <b-card-text>
-                            Some quick example text to build on the card title and make up the bulk of the card's content.
-                          </b-card-text>
-                          <b-button href="#" variant="primary">Go somewhere</b-button>
-                      </b-card>
+                      <MovieCard/>
                     </b-col>
                     <b-col>
-                      <b-card
-                        title="Card Title"
-                        img-src="https://picsum.photos/600/300/?image=25"
-                        img-alt="Image"
-                        img-top
-                        tag="article"
-                        style="max-width: 20rem;"
-                        class="mb-2">
-                          <b-card-text>
-                            Some quick example text to build on the card title and make up the bulk of the card's content.
-                          </b-card-text>
-                          <b-button href="#" variant="primary">Go somewhere</b-button>
-                      </b-card>
+                      <MovieCard/>
                     </b-col>
                 </b-row>
               </b-container>
@@ -250,8 +106,13 @@
 </template>
 
 <script>
+import MovieCard from './MovieCard'
+
 export default {
-  name: 'HomeMovies'
+  name: 'HomeMovies',
+  components: {
+    MovieCard
+  }
 }
 </script>
 
