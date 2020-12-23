@@ -1,0 +1,29 @@
+[
+    {
+        "id": 0,
+        "title": "Tenet",
+        "image1": "https://m.media-amazon.com/images/M/MV5BYzg0NGM2NjAtNmIxOC00MDJmLTg5ZmYtYzM0MTE4NWE2NzlhXkEyXkFqcGdeQXVyMTA4NjE0NjEy._V1_.jpg",
+        "image2": "https://www.moviedash.com/wp-content/uploads/2020/05/Tenet-Theories-1.jpeg",
+        "Rating": 3,
+        "genre": "Action, Adventure, Drama",
+        "UserReviews": ""
+    },
+    {
+        "id": 1,
+        "title": "The Undoing",
+        "image1": "https://m.media-amazon.com/images/M/MV5BNzY5YTcxMWYtYjFkZi00ZmI3LThmYjgtMzY0YjQzZWFkNzQ4XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg",
+        "image2": "https://tvseriesfinale.com/wp-content/uploads/2020/10/undoing06.png",
+        "Rating": 3,
+        "genre": "Crime, Mystery, Drama",
+        "UserReview": ""
+    },
+    {
+        "id": 2,
+        "title": "Ocean's 8",
+        "image1": "https://i.pinimg.com/originals/8a/dc/c0/8adcc0de1d604bfc814d201b9bd0d98a.jpg",
+        "image2": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/846a9086-8a40-43e0-aa10-2fc7d6d73730/dc4g8wg-36cb3b17-a6ea-4962-b524-5086e787b528.jpg/v1/fill/w_900,h_600,q_75,strp/ocean_s_8_poster_by_mintmovi3_dc4g8wg-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD02MDAiLCJwYXRoIjoiXC9mXC84NDZhOTA4Ni04YTQwLTQzZTAtYWExMC0yZmM3ZDZkNzM3MzBcL2RjNGc4d2ctMzZjYjNiMTctYTZlYS00OTYyLWI1MjQtNTA4NmU3ODdiNTI4LmpwZyIsIndpZHRoIjoiPD05MDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.lknaO5oyDrLWl_HLV-rDhbyU8SD3sA9NjaeWH4EDgnY",
+        "Rating": 3,
+        "genre": "",
+        "UserReview": ""
+    }
+]
