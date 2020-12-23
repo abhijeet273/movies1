@@ -16,30 +16,10 @@
             <template #img>
                 <b-container class="bv-example-row">
                   <b-row>
-                    <b-col>
-                      <MovieCard/>
-                    </b-col>
-                    <b-col>
-                      <MovieCard/>
-                    </b-col>
-                    <b-col>
-                    </b-col>
-                </b-row>
-              </b-container>
-            </template>
-          </b-carousel-slide>
-          <b-carousel-slide>
-            <template #img>
-                <b-container class="bv-example-row">
-                  <b-row>
-                    <b-col>
-                      <MovieCard/>
-                    </b-col>
-                    <b-col>
-                      <MovieCard/>
-                    </b-col>
-                    <b-col>
-                      <MovieCard/>
+                    <b-col v-for= "LatestMovie in LatestMovies" :key="LatestMovie.id">
+                      <router-link :to="{ name: 'Movie', params: { id: LatestMovie.id } }">
+                      <MovieCard :title= "LatestMovie.title" :image1= "LatestMovie.image1" />
+                      </router-link>
                     </b-col>
                 </b-row>
               </b-container>
@@ -66,36 +46,15 @@
             <template #img>
                 <b-container class="bv-example-row">
                   <b-row>
-                    <b-col>
-                      <MovieCard/>
-                    </b-col>
-                    <b-col>
-                      <MovieCard/>
-                    </b-col>
-                    <b-col>
-                      <MovieCard/>
+                    <b-col v-for= "PopularMovie in PopularMovies" :key="PopularMovie.id">
+                      <router-link :to="{ name: 'Movie', params: { id: PopularMovie.id } }">
+                        <MovieCard :title= "PopularMovie.title" :image1= "PopularMovie.image1" />
+                      </router-link>
                     </b-col>
                 </b-row>
               </b-container>
             </template>
-          </b-carousel-slide>
-          <b-carousel-slide>
-            <template #img>
-                <b-container class="bv-example-row">
-                  <b-row>
-                    <b-col>
-                      <MovieCard/>
-                    </b-col>
-                    <b-col>
-                      <MovieCard/>
-                    </b-col>
-                    <b-col>
-                      <MovieCard/>
-                    </b-col>
-                </b-row>
-              </b-container>
-            </template>
-          </b-carousel-slide>     
+          </b-carousel-slide>   
         </b-carousel>
       </div>
     </template>
@@ -106,12 +65,20 @@
 
 <script>
 import MovieCard from './MovieCard'
+import LatestMovies from "../assets/latest.json"
+import PopularMovies from "../assets/popular.json"
 
 export default {
   name: 'HomeMovies',
   components: {
     MovieCard
-  }
+  },
+  data(){
+    return{
+        LatestMovies: LatestMovies,
+        PopularMovies: PopularMovies
+    }
+    }
 }
 </script>
 

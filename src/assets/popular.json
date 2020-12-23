@@ -1,0 +1,29 @@
+[
+    {
+        "id": 3,
+        "title": "Joker",
+        "image1": "https://www.joblo.com/assets/images/joblo/posters/2019/08/joker-poster-main2.jpg",
+        "image2": "https://www.animatedtimes.com/wp-content/uploads/2019/04/joaquin-phoenix-joker.jpg",
+        "Rating": 3,
+        "genre": "Crime, Thriller, Drama",
+        "UserReviews": ""
+    },
+    {
+        "id": 4,
+        "title": "Ford v Ferrari",
+        "image1": "https://i.pinimg.com/originals/a0/ba/32/a0ba327822d95eb722429f56f3a57abe.jpg",
+        "image2": "https://i1.wp.com/www.iconvsicon.com/wp-content/uploads/2019/06/Ford_v_Ferrari_OneSheet-featured.jpg?fit=800%2C488&ssl=1",
+        "Rating": 3,
+        "genre": "Action, Sports, Drama",
+        "UserReview": ""
+    },
+    {
+        "id": 5,
+        "title": "Into The Wild",
+        "image1": "https://upload.wikimedia.org/wikipedia/en/thumb/d/dc/Into_the_Wild_%282007_film_poster%29.png/220px-Into_the_Wild_%282007_film_poster%29.png",
+        "image2": "https://inews-prd-a-images.s3.eu-west-2.amazonaws.com/content/uploads/2017/10/Into-the-Wild-Bus--640x360.jpg",
+        "Rating": 3,
+        "genre": "Adventure, Drama",
+        "UserReview": ""
+    }
+]

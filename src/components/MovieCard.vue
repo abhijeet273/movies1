@@ -1,8 +1,7 @@
 <template>
-    <router-link to="/Movie">
         <b-card
-        title="Tenet"
-        img-src="https://m.media-amazon.com/images/M/MV5BYzg0NGM2NjAtNmIxOC00MDJmLTg5ZmYtYzM0MTE4NWE2NzlhXkEyXkFqcGdeQXVyMTA4NjE0NjEy._V1_.jpg"
+        :title= "title"
+        :img-src= "image1"
         img-alt="Image"
         img-top
         tag="article"
@@ -17,14 +16,21 @@
             </b-card-text>
             <b-button href="#" variant="primary">Watch Trailer</b-button>
         </b-card>
-    </router-link>
 </template>
 
 <script>
-
+import LatestMovies from "../assets/latest.json"
 export default {
-name: "MovieCard",
-components: "StarRating"
+    name: "MovieCard",
+    props: {
+        title: String,
+        image1: String
+    },
+    data(){
+        return{
+            LatestMovies: LatestMovies
+        }
+    }
 }
 </script>
 
