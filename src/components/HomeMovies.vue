@@ -23,7 +23,6 @@
                       <MovieCard/>
                     </b-col>
                     <b-col>
-                      <MovieCard/>
                     </b-col>
                 </b-row>
               </b-container>

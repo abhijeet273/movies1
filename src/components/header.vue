@@ -1,7 +1,8 @@
 <template>
 <b-navbar toggleable="lg" type="dark" variant="info">
-    <b-navbar-brand href="#">MoviesArena</b-navbar-brand>
-
+  <router-link to="/">
+    <b-navbar-brand>MoviesArena</b-navbar-brand>
+  </router-link>
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
     <b-collapse id="nav-collapse" is-nav>
