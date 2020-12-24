@@ -16,7 +16,7 @@
             <template #img>
                 <b-container class="bv-example-row">
                   <b-row>
-                    <b-col v-for= "LatestMovie in LatestMovies" :key="LatestMovie.id">
+                    <b-col cols="3" class="mb-5" v-for= "LatestMovie in LatestMovies" :key="LatestMovie.id">
                       <router-link :to="{ name: 'Movie', params: { id: LatestMovie.id } }">
                       <MovieCard :title= "LatestMovie.title" :image1= "LatestMovie.image1" />
                       </router-link>
@@ -28,36 +28,6 @@
         </b-carousel>
       </div>
     </template>
-
-    <h3 id="mostPopular">Most Popular</h3>
-
-    <template>
-      <div class="mb-0">
-        <b-carousel
-          id="carousel-1"
-          v-model="slide"
-          :interval="4000"
-          controls
-          background="rgb(24, 26, 27)"
-          img-width="1024"
-          img-height="480"
-          style="text-shadow: 1px 1px 2px #333;" >    
-          <b-carousel-slide>
-            <template #img>
-                <b-container class="bv-example-row">
-                  <b-row>
-                    <b-col v-for= "PopularMovie in PopularMovies" :key="PopularMovie.id">
-                      <router-link :to="{ name: 'Movie', params: { id: PopularMovie.id } }">
-                        <MovieCard :title= "PopularMovie.title" :image1= "PopularMovie.image1" />
-                      </router-link>
-                    </b-col>
-                </b-row>
-              </b-container>
-            </template>
-          </b-carousel-slide>   
-        </b-carousel>
-      </div>
-    </template>
   </div>
   <!-- movies cards carousal -->    
 
@@ -66,7 +36,6 @@
 <script>
 import MovieCard from './MovieCard'
 import LatestMovies from "../assets/latest.json"
-import PopularMovies from "../assets/popular.json"
 
 export default {
   name: 'HomeMovies',
@@ -76,7 +45,6 @@ export default {
   data(){
     return{
         LatestMovies: LatestMovies,
-        PopularMovies: PopularMovies
     }
     }
 }

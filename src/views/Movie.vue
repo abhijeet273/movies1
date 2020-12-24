@@ -2,12 +2,10 @@
   <div>
   <Header/>
   <b-container class="bv-example-row">
-    <h1 v-if= "id < 3" class="mt-4">{{LatestMovies[id=id].title}}</h1>
-    <h1 v-else class="mt-4">{{PopularMovies[newId].title}}</h1>
+    <h1 class="mt-4">{{LatestMovies[id].title}}</h1>
     <b-row>
         <b-col cols="8">
-            <img v-if= "id<3" class='mb-2 center' :src= "LatestMovies[id].image2" alt="">
-            <img v-else class='mb-2 center' :src= "PopularMovies[newId].image2" alt="">
+            <img class='mb-2 center' :src= "LatestMovies[id].image2" alt="">
             <div calss='d-block'>Rating</div>
             <div class='d-block'>
                 <span class="fa fa-star checked"></span>
@@ -17,7 +15,7 @@
                 <span class="fa fa-star"></span> - 3/5
             </div>
             <div class="d-block mb-2">
-                <p> Genre: Action, Adventure, Drama</p>
+                <p>{{LatestMovies[id].genre}}</p>
             </div>
             <div class="block mb-4">
                 <h5><strong>Plot:</strong></h5>
@@ -51,7 +49,7 @@
 <script>
 import Header from '../components/header'
 import LatestMovies from "../assets/latest.json"
-import PopularMovies from "../assets/popular.json"
+
 export default {
     name: "Movie",
     components: {
@@ -61,8 +59,8 @@ export default {
         return{
            id: this.$route.params.id,
            LatestMovies: LatestMovies,
-           PopularMovies: PopularMovies,
-           newId: this.$route.params.id - 3
+           
+           
         }
     }
 }
