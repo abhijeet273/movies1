@@ -16,8 +16,8 @@
             <template #img>
                 <b-container class="bv-example-row">
                   <b-row>
-                    <b-col cols="3" class="mb-5" v-for= "LatestMovie in LatestMovies" :key="LatestMovie.id">
-                      <router-link :to="{ name: 'Movie', params: { id: LatestMovie.id } }">
+                    <b-col cols="3" class="mb-5" v-for= "(LatestMovie, index) in allMovies" :key="index">
+                      <router-link :to="{ name: 'Movie', params: { id: index } }">
                       <MovieCard :title= "LatestMovie.title" :image1= "LatestMovie.image1" />
                       </router-link>
                     </b-col>
@@ -35,7 +35,8 @@
 
 <script>
 import MovieCard from './MovieCard'
-import LatestMovies from "../assets/latest.json"
+import axios from 'axios';
+
 
 export default {
   name: 'HomeMovies',
@@ -44,9 +45,13 @@ export default {
   },
   data(){
     return{
-        LatestMovies: LatestMovies,
+        allMovies: null
     }
-    }
+    },
+  mounted: function() {
+    axios.get('https://sfrbp8a2m7.execute-api.us-east-1.amazonaws.com/dev/movies')
+        .then(response=> this.allMovies = response.data);
+  }
 }
 </script>
 

@@ -4,7 +4,9 @@
 			<h1>Welcome to the MoviesArena</h1>
 			<p>View our handpicked movies catalogue here</p>
 			<p>
-				<a class="btn btn-primary btn-lg" href="#">Add new Movie</a>
+				<router-link to="/newmovie">
+				<a class="btn btn-primary btn-lg">Add new Movie</a>
+				</router-link>
 			</p>
 		</div>
   </header>

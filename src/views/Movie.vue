@@ -2,10 +2,10 @@
   <div>
   <Header/>
   <b-container class="bv-example-row">
-    <h1 class="mt-4">{{LatestMovies[id].title}}</h1>
+    <h1 class="mt-4">{{allMovies[index].title}}</h1>
     <b-row>
         <b-col cols="8">
-            <img class='mb-2 center' :src= "LatestMovies[id].image2" alt="">
+            <img class='mb-2 center' :src= "allMovies[index].image2" alt="">
             <div calss='d-block'>Rating</div>
             <div class='d-block'>
                 <span class="fa fa-star checked"></span>
@@ -15,7 +15,7 @@
                 <span class="fa fa-star"></span> - 3/5
             </div>
             <div class="d-block mb-2">
-                <p>{{LatestMovies[id].genre}}</p>
+                <p>{{allMovies[index].genre}}</p>
             </div>
             <div class="block mb-4">
                 <h5><strong>Plot:</strong></h5>
@@ -48,7 +48,7 @@
 
 <script>
 import Header from '../components/header'
-import LatestMovies from "../assets/latest.json"
+import axios from "axios"
 
 export default {
     name: "Movie",
@@ -57,12 +57,14 @@ export default {
     },
     data(){
         return{
-           id: this.$route.params.id,
-           LatestMovies: LatestMovies,
-           
-           
+           index: this.$route.params.id,
+           allMovies: null
         }
-    }
+    },
+    mounted: function() {
+    axios.get('https://sfrbp8a2m7.execute-api.us-east-1.amazonaws.com/dev/movies')
+        .then(response=> this.allMovies = response.data);
+  }
 }
 </script>
 

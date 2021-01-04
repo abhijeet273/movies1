@@ -4,9 +4,21 @@
   </div>
 </template>
 
+
 <script>
+import axios from 'axios';
+
 export default {
   name: 'App',
+  data() {
+    return {
+      moviesdb: null
+    }
+  },
+  mounted: function() {
+    axios.get('https://sfrbp8a2m7.execute-api.us-east-1.amazonaws.com/dev/movies')
+        .then(response=> this.moviesdb = response.data);
+  }
 }
 </script>
 

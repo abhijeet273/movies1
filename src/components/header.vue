@@ -1,4 +1,5 @@
 <template>
+<div> 
 <b-navbar toggleable="lg" type="dark" variant="info">
   <router-link to="/">
     <b-navbar-brand>MoviesArena</b-navbar-brand>
@@ -19,6 +20,7 @@
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
+</div>
 </template>
 
 
