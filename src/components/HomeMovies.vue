@@ -5,7 +5,7 @@
       <div class="mb-0">
         <b-carousel
           id="carousel-1"
-          v-model="slide"
+    
           :interval="4000"
           controls
           background="rgb(24, 26, 27)"

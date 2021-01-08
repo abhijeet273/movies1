@@ -5,7 +5,7 @@
 			<p>View our handpicked movies catalogue here</p>
 			<p>
 				<router-link to="/newmovie">
-				<a class="btn btn-primary btn-lg">Add new Movie</a>
+				<a v-if="$auth.isAuthenticated" class="btn btn-primary btn-lg">Add new Movie</a>
 				</router-link>
 			</p>
 		</div>

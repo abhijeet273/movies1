@@ -6,6 +6,7 @@
     <b-row>
         <b-col cols="8">
             <img class='mb-2 center' :src= "allMovies[index].image2" alt="">
+            <b-button v-if= "$auth.isAuthenticated" class= "float-right" variant="danger" @click= "Delete">Delete</b-button>
             <div calss='d-block'>Rating</div>
             <div class='d-block'>
                 <span class="fa fa-star checked"></span>
@@ -64,7 +65,13 @@ export default {
     mounted: function() {
     axios.get('https://sfrbp8a2m7.execute-api.us-east-1.amazonaws.com/dev/movies')
         .then(response=> this.allMovies = response.data);
-  }
+  },
+    methods: {
+        Delete(){
+            axios.delete('https://sfrbp8a2m7.execute-api.us-east-1.amazonaws.com/dev/movie/' + this.allMovies[this.index].id )
+            .then(()=> this.$router.push({name: 'Home'}) )
+        }
+    }
 }
 </script>
 

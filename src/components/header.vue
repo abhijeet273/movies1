@@ -15,8 +15,11 @@
           <b-button size="sm" class="my-2 my-sm-0 mr-5" type="submit">Search</b-button>
         </b-nav-form>
       </b-navbar-nav>
-      <b-navbar-nav class="ml-auto">
-       <b-nav-item class="ml-5 float-right">Signup or login</b-nav-item>
+      <b-navbar-nav v-if= "!$auth.loading" class="ml-auto">
+
+       <b-nav-item v-if= "!$auth.isAuthenticated" @click= "login" class="ml-5 float-right">Signup or Login</b-nav-item>
+
+       <b-nav-item v-if= "$auth.isAuthenticated" @click= "logout" class="ml-5 float-right">Logout</b-nav-item>
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
@@ -26,6 +29,18 @@
 
 <script>
 export default {
-    name: 'Header'
+    name: 'Header',
+    methods: {
+      
+    login() {
+      this.$auth.loginWithRedirect();
+    },
+
+    logout() {
+      this.$auth.logout({
+        returnTo: window.location.origin
+      });
+    }
+    }
 }
 </script>
