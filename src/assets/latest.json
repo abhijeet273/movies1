@@ -6,7 +6,10 @@
         "image2": "https://www.moviedash.com/wp-content/uploads/2020/05/Tenet-Theories-1.jpeg",
         "Rating": 3,
         "genre": "Action, Adventure, Drama",
-        "UserReviews": ""
+        "userReviews": [{"rating": 3, 
+            "impression": "Overall Impression", 
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", 
+            "author": "Abhijeet"}]
     },
     {
         "id": 1,
@@ -15,7 +18,10 @@
         "image2": "https://tvseriesfinale.com/wp-content/uploads/2020/10/undoing06.png",
         "Rating": 3,
         "genre": "Crime, Mystery, Drama",
-        "UserReview": ""
+        "userReview": [{"rating": 3, 
+            "impression": "Overall Impression", 
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", 
+            "author": "Abhijeet"}]
     },
     {
         "id": 2,
@@ -24,7 +30,10 @@
         "image2": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/846a9086-8a40-43e0-aa10-2fc7d6d73730/dc4g8wg-36cb3b17-a6ea-4962-b524-5086e787b528.jpg/v1/fill/w_900,h_600,q_75,strp/ocean_s_8_poster_by_mintmovi3_dc4g8wg-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD02MDAiLCJwYXRoIjoiXC9mXC84NDZhOTA4Ni04YTQwLTQzZTAtYWExMC0yZmM3ZDZkNzM3MzBcL2RjNGc4d2ctMzZjYjNiMTctYTZlYS00OTYyLWI1MjQtNTA4NmU3ODdiNTI4LmpwZyIsIndpZHRoIjoiPD05MDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.lknaO5oyDrLWl_HLV-rDhbyU8SD3sA9NjaeWH4EDgnY",
         "Rating": 3,
         "genre": "",
-        "UserReview": ""
+        "userReview": [{"rating": 3, 
+            "impression": "Overall Impression", 
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", 
+            "author": "Abhijeet"}]
     },
     {
         "id": 3,
@@ -33,7 +42,10 @@
         "image2": "https://www.animatedtimes.com/wp-content/uploads/2019/04/joaquin-phoenix-joker.jpg",
         "Rating": 3,
         "genre": "Crime, Thriller, Drama",
-        "UserReviews": ""
+        "userReviews": [{"rating": 3, 
+            "impression": "Overall Impression", 
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", 
+            "author": "Abhijeet"}]
     },
     {
         "id": 4,
@@ -42,7 +54,10 @@
         "image2": "https://i1.wp.com/www.iconvsicon.com/wp-content/uploads/2019/06/Ford_v_Ferrari_OneSheet-featured.jpg?fit=800%2C488&ssl=1",
         "Rating": 3,
         "genre": "Action, Sports, Drama",
-        "UserReview": ""
+        "userReview": [{"rating": 3, 
+            "impression": "Overall Impression", 
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", 
+            "author": "Abhijeet"}]
     },
     {
         "id": 5,
@@ -51,6 +66,9 @@
         "image2": "https://inews-prd-a-images.s3.eu-west-2.amazonaws.com/content/uploads/2017/10/Into-the-Wild-Bus--640x360.jpg",
         "Rating": 3,
         "genre": "Adventure, Drama",
-        "UserReview": ""
+        "userReview": [{"rating": 3, 
+            "impression": "Overall Impression", 
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", 
+            "author": "Abhijeet"}]
     }
 ]

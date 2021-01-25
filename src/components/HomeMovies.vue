@@ -47,11 +47,13 @@ export default {
     return{
         allMovies: null
     }
-    },
+  },
   mounted: function() {
     axios.get('https://sfrbp8a2m7.execute-api.us-east-1.amazonaws.com/dev/movies')
         .then(response=> this.allMovies = response.data);
-  }
+  },
+
+
 }
 </script>
 

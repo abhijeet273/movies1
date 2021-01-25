@@ -1,5 +1,6 @@
 <template>
 <div> 
+
 <b-navbar toggleable="lg" type="dark" variant="info">
   <router-link to="/">
     <b-navbar-brand>MoviesArena</b-navbar-brand>
@@ -11,8 +12,11 @@
       <!-- Right aligned nav items -->
       <b-navbar-nav>
         <b-nav-form>
-          <b-form-input size="sm" class="mr-sm-2" placeholder="Search"></b-form-input>
-          <b-button size="sm" class="my-2 my-sm-0 mr-5" type="submit">Search</b-button>
+          <b-form-input v-model= "movieIndex" size="sm" class="mr-sm-2" list="my-list-id" placeholder="Search"></b-form-input>
+          <datalist id="my-list-id">
+            <option v-for= "(movie, index) in allMovies" :key= "index" :value= "index">{{ movie.title }}</option>
+          </datalist>
+          <b-button size="sm" class="my-2 my-sm-0 mr-5" @click="onSubmit" >Search</b-button>
         </b-nav-form>
       </b-navbar-nav>
       <b-navbar-nav v-if= "!$auth.loading" class="ml-auto">
@@ -28,19 +32,39 @@
 
 
 <script>
+import axios from 'axios';
+
 export default {
     name: 'Header',
-    methods: {
-      
-    login() {
-      this.$auth.loginWithRedirect();
+
+    data(){
+      return{
+        movieIndex: null,
+        allMovies: null
+      }
     },
 
-    logout() {
-      this.$auth.logout({
-        returnTo: window.location.origin
-      });
-    }
-    }
+    methods: {
+      login() {
+        this.$auth.loginWithRedirect();
+      },
+
+      logout() {
+        this.$auth.logout({
+          returnTo: window.location.origin
+        });
+      },
+
+      onSubmit(event) {
+        event.preventDefault()
+        this.$router.push({ name: 'Movie', params: { id: this.movieIndex } })
+      }
+    },
+
+    mounted: function() {
+      axios.get('https://sfrbp8a2m7.execute-api.us-east-1.amazonaws.com/dev/movies')
+          .then(response=> this.allMovies = response.data);
+  }
+
 }
 </script>
